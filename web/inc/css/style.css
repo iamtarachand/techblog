@@ -1,0 +1,206 @@
+:root{
+  --shadeBlue : #303F9F;
+  --lightGray : #E0E0E0;
+  --shadePurple : #9763f6;
+}
+::selection {
+  background: var(--shadePurple);
+  color: var(--bs-white);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+.ta-bg-light{
+  background-color: #ffffff;
+}
+header .ta-bg-light{
+  box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ta-btn{
+  border-radius: 0;
+  border: 1px solid #303F9F;
+  align-items: center;
+}
+.ta-btn:active{
+  border-radius: 0;
+  background-color: #E0E0E0;
+  border: 1px solid #303F9F;
+}
+
+.ta-btn:focus{
+  border-radius: 0;
+  border: 1px solid #303F9F;
+  background-color: #E0E0E0;
+  box-shadow:none;
+}
+.ta-btn:hover{
+  border-radius: 0;
+  border: 1px solid #303F9F;
+  box-shadow: 1px 1px 4px 4px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.ta-input{
+  border-radius: 0;
+}
+.ta-input:focus{
+  border-radius: 0;
+  border: 1px solid #303F9F;
+  box-shadow:none;
+}
+
+.ta-login>.btn, .ta-login>.btn:focus, .ta-login>.btn:active{
+  border-radius: 0;
+  border: 0;
+}
+
+.ta-dropdown-menu{
+  border-radius: 0;
+  padding: 0px !important;
+}
+.ta-dropdown-menu>li>.dropdown-item,.ta-dropdown-menu>ul>li>.dropdown-item{
+  padding: 10px !important;
+}
+
+.ta-dropdown-menu>li>.dropdown-item:active, .ta-dropdown-menu>li>.dropdown-item:focus,.ta-dropdown-menu>ul>li>.dropdown-item:active, .ta-dropdown-menu>ul>li>.dropdown-item:focus{
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: var(--bs-dropdown-link-hover-bg);
+  border: 1px solid #303F9F;
+}
+
+#ta-drop-menu{
+  left: inherit; 
+  right: 0;
+  text-align: left;    
+  border-radius: 0;
+  padding: 0px !important;
+}
+#ta-drop-menu>li>.dropdown-item{
+  padding: 10px !important;
+}
+#ta-drop-menu>li:first-child>.dropdown-item{
+  border-bottom: 1px solid #303F9F;
+}
+
+#ta-drop-menu>li>.dropdown-item:active, #ta-drop-menu>li>.dropdown-item:focus{
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: var(--bs-dropdown-link-hover-bg);
+  border: 1px solid #303F9F;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  font-weight: bold;
+  color: var(--shadeBlue);
+  border-bottom: 2px solid var(--shadePurple);
+}
+
+@media only screen and (min-width: 992px) {
+  .ta-dropdown:hover .ta-dropdown-menu {
+    display: block !important;
+  }
+  /* .dropdown-menu.show {
+    display: block !important;
+  } */
+}
+@media only screen and (max-width: 992px) {
+  #righttog>form{
+    padding: 20px 0 5px 0;  
+  }
+}
+
+/* Mega Menu */
+.ta-mega-dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.ta-mega-dropdown-menu.show {
+  display: flex;
+}
+.ta-mega-dropdown-menu li:first-child a {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: var(--shadeBlue);
+}
+.ta-mega-dropdown-menu li .dropdown-item {
+  color: gray;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+.ta-mega-dropdown-menu, .dropdown-menu {
+  border: none;
+  border-radius: 0;
+  padding: 0.7em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+@media only screen and (min-width: 992px) {
+  .ta-mega-dropdown:hover .ta-mega-dropdown-menu {
+    display: flex;
+  }
+  .ta-mega-dropdown-menu.show {
+    display: flex !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .ta-mega-dropdown:hover .ta-mega-dropdown-menu {
+    /* max-height: 60vh; */
+    /* overflow-y: scroll; */
+  }
+  .ta-mega-dropdown-menu.show {
+    display: block !important;
+  }
+}
+
+
+/* signin */
+
+/* body {
+  height: 100%;
+} */
+
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.card{
+  border: 0;
+  border-radius: 0px;
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.ta-signin-form{
+  color: var(--shadePurple);
+}
+.ta-signin-form>.h3,.form-signin>.h3{
+  color: var(--shadeBlue);
+}
+
+.ta-signin-form>.ta-btn:focus{
+  border-radius: 0;
+  border: 1px solid #303F9F;
+  background-color: var(--bs-btn-bg) !important;
+  box-shadow:none;
+}
