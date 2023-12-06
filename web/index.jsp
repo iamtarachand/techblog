@@ -4,7 +4,7 @@
     
 <%@include file="navbar.jsp" %>
     
-<%@include file="inc/parts/contents.jsp" %>
-<%@include file="inc/parts/latestjobs.jsp" %>
-<%@include file="inc/parts/latestblog.jsp" %>
+<%@include file="contents.jsp" %>
+<%@include file="latestjobs.jsp" %>
+<%@include file="latestblog.jsp" %>
 <%@include file="footer.jsp" %>

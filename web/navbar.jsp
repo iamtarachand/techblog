@@ -97,12 +97,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="inc/parts/modules/careers.jsp">Careers</a>
+                        <a class="nav-link" href="careers.jsp">Careers</a>
                     </li>
 
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="inc/parts/contactus.jsp">Contact</a>
+                        <a class="nav-link" href="contactus.jsp">Contact</a>
                     </li>
                 </ul>
 
