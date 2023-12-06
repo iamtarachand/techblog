@@ -5,7 +5,7 @@
                 aria-controls="lefttog" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand ms-auto" href="/TechBlog">Navbar</a>
+            <a class="navbar-brand ms-auto" href="/TechBlog">Navbar Logo</a>
 
             <button class="navbar-toggler ta-btn ms-auto" type="button" data-bs-toggle="collapse"
                 data-bs-target="#righttog" aria-controls="righttog" aria-expanded="false"
